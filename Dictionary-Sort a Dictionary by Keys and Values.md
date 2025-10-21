@@ -35,20 +35,26 @@ To write a Python program that sorts a dictionary's:
     dict = {'b':1,'e':27,'c':7,'a':3,'d':15}
 
     # To sort dictionary by keys
-    dict1 = sorted(dict.items())
+    sort1 = sorted(dict.items())
     print("The Sorted Dictionary by keys.....")
+    dict1={}
+    for key,value in sort1:
+        dict1[key] = value
     print(dict1)
     
     print()
-
+    
     # To sort dictionary by values
-    dict2 = sorted(dict.items(),key = lambda item : item[1])
+    sort2 = sorted(dict.items(),key = lambda item : item[1])
     print("The Sorted Dictionary by values.....")
+    dict2 = {}
+    for key,value in sort2:
+        dict2[key] = value
     print(dict2)
 
 ## Output:
 
-<img width="1919" height="740" alt="Screenshot 2025-10-21 105720" src="https://github.com/user-attachments/assets/5bf53c25-fcbb-42b5-9790-9f04f42f43ca" />
+<img width="1918" height="842" alt="image" src="https://github.com/user-attachments/assets/30016f47-8c1b-48ed-a00c-3e580116bb4f" />
 
 
 ## Result:
